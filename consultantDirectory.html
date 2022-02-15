@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fav icon section starts here-->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"> -->
+    <!--fav icon section ends here-->
+
+    <!--Google font section starts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Manrope:wght@300;400;500;600;700;800&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Google font section ends here-->
+
+    <!--font awesome section starts here-->
+    <link rel="stylesheet" href="./assets/CSS/fontawesome.min.css">
+    <!--font awesome section ends here-->
+
+    <!--slick CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/slick.css">
+    <!--bootstrap CSS ends here-->
+
+    <!--aos CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/aos.css">
+    <!--aos CSS ends here-->
+
+   
+    <!--bootstrap CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <!--bootstrap CSS ends here-->
+
+    <!--Main CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!--Main CSS ends here-->
+
+    <!--responsive CSS starts here-->
+    <link rel="stylesheet" href="assets/CSS/responsive.css">
+    <!--responsive CSS ends here-->
+    <title>Virtual Edu Consultancy</title>
+</head>
+<body>
+    <!--preloader section begins here-->
+    <!-- <div id="preloader">
+        <img src="assets/img/pre-loader.gif" alt="preloader">
+    </div> -->
+    <!--preloader section ends here-->
+
+    <!-- navbar section begins here -->
+    <nav id="nav" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="./assets/img/Group 1635.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Diploma</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Undergraduate</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Postgraduate</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Doctorate</a></li>
+                    <li class="nav-item"><a href="consultantDirectory.html" class="p-0"><button type="button">Become a Consultant</button></a></li>
+                    <li class="nav-item"><a href="consultantProfile.html" class="p-0"><button type="button" class="user_btn"><span class="bars"><i class="fas fa-bars"></i></span><span class="user"><i class="fas fa-user"></i></span></button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <!-- navbar section ends here -->
+
+    <!--directory banner section begins here-->
+    <div id="directory_banner">
+        <div class="container h-100">
+            <div class="banner_wrapper h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12">
+                        <div class="banner_text">
+                            <div class="banner_ttl">
+                                <h2>Consultant Directory</h2>
+                            </div>
+                            <form class="d-flex justify-content-center">
+                                <select class="form-select">
+                                    <option selected>London</option>
+                                    <option value="California">California</option>
+                                    <option value="Sydney">Sydney</option>
+                                    <option value="Auckland">Auckland</option>
+                                </select>
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn search" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                            <span class="small_text_loc">Based on your Location</span>
+                            <span class="small_text">Ex : university,Department,program name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--directory banner section ends here-->
+
+    <!-- directory filter and people section begins here -->
+    <section id="directory_filter_people">
+        <div class="container-fluid">
+            <div class="directory_wrapper d-flex">
+                <div class="side_filter">
+                    <div class="search_tt">
+                        <h5>Search Filter</h5>
+                    </div>
+                    <div class="checkboxes">
+                        <div class="consultant_country">
+                            <ul>
+                                <li><h6>Consultant by Country</h6></li>
+                                <li><label class="d-block"><input type="checkbox">India</label></li>
+                                <li><label><input type="checkbox">United States</label></li>
+                                <li><label><input type="checkbox">Pakistan</label></li>
+                                <li><label><input type="checkbox">Egypt</label></li>                            
+                                <li><label><input type="checkbox">Afghanistan</label></li>
+                                <li><label><input type="checkbox">Albania</label></li>
+                                <li><label><input type="checkbox">United Arab Emirates</label></li>
+                                <li><label><input type="checkbox">Nigeria</label></li>
+                                <li><label><input type="checkbox">Saudi Arabia</label></li>
+                                <li><label><input type="checkbox">Bangladesh</label></li>
+                                <li><label><input type="checkbox">Jordan</label></li>
+                            </ul>
+                        </div>
+                        <div class="consultant_subject">
+                            <ul>
+                                <li><h6>Select Subjecy</h6></li>
+                                <li><label class="d-block"><input type="checkbox">Computer science</label></li>
+                                <li><label><input type="checkbox">physics</label></li>
+                                <li><label><input type="checkbox">Civil Engineering</label></li>
+                                <li><label><input type="checkbox"> EEE</label></li>                            
+                                <li><label><input type="checkbox">MBBS</label></li>
+                                <li><label><input type="checkbox">Art & Printing</label></li>
+                                <li><label><input type="checkbox">IETS</label></li>
+                                <li><label><input type="checkbox">Mathmatics</label></li>
+                                <li><label><input type="checkbox">Chemistry</label></li>
+                                <li><label><input type="checkbox">Marin Engineering</label></li>
+                                <li><label><input type="checkbox">Aircraft</label></li>
+                            </ul>
+                        </div>
+                        <div class="side_search">
+                            <a href="#">Search</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_people">
+                    <ul class="directory_people_wrapper">
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="directory_people_img">
+                                        <img src="./assets/img/cons.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="directory_info">
+                                        <div class="profile_info_name">
+                                            <h4>Mohammad Rakib</h4>
+                                            <a href="#">Cambridge University, London</a>
+                                            <p>(MSC in computer science)</p>
+                                            <p class="profile_place">From Dhaka,Bangladesh</p>
+                                        </div>
+                                        <div class="consult_btn">
+                                            <a href="#"><i class="fas fa-comment"></i>Consult by text</a>
+                                            <a href="#"><i class="fas fa-phone-alt"></i>Consult by phone</a>
+                                            <a href="#"><i class="fas fa-video"></i>Consult by video</a>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <p>(Average rating: 4.88 based on 5 ratings)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="directory_fees">
+                                        <h6>Fee</h6>
+                                        <p>Query : $4.99</p>
+                                        <p>Phone/Video : $9.99</p>
+                                        <p>Language Known: Arabic, English</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="directory_people_img">
+                                        <img src="./assets/img/cons.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="directory_info">
+                                        <div class="profile_info_name">
+                                            <h4>Mohammad Rakib</h4>
+                                            <a href="#">Cambridge University, London</a>
+                                            <p>(MSC in computer science)</p>
+                                            <p class="profile_place">From Dhaka,Bangladesh</p>
+                                        </div>
+                                        <div class="consult_btn">
+                                            <a href="#"><i class="fas fa-comment"></i>Consult by text</a>
+                                            <a href="#"><i class="fas fa-phone-alt"></i>Consult by phone</a>
+                                            <a href="#"><i class="fas fa-video"></i>Consult by video</a>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <p>(Average rating: 4.88 based on 5 ratings)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="directory_fees">
+                                        <h6>Fee</h6>
+                                        <p>Query : $4.99</p>
+                                        <p>Phone/Video : $9.99</p>
+                                        <p>Language Known: Arabic, English</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="directory_people_img">
+                                        <img src="./assets/img/cons.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="directory_info">
+                                        <div class="profile_info_name">
+                                            <h4>Mohammad Rakib</h4>
+                                            <a href="#">Cambridge University, London</a>
+                                            <p>(MSC in computer science)</p>
+                                            <p class="profile_place">From Dhaka,Bangladesh</p>
+                                        </div>
+                                        <div class="consult_btn">
+                                            <a href="#"><i class="fas fa-comment"></i>Consult by text</a>
+                                            <a href="#"><i class="fas fa-phone-alt"></i>Consult by phone</a>
+                                            <a href="#"><i class="fas fa-video"></i>Consult by video</a>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <p>(Average rating: 4.88 based on 5 ratings)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="directory_fees">
+                                        <h6>Fee</h6>
+                                        <p>Query : $4.99</p>
+                                        <p>Phone/Video : $9.99</p>
+                                        <p>Language Known: Arabic, English</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="directory_people_img">
+                                        <img src="./assets/img/cons.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="directory_info">
+                                        <div class="profile_info_name">
+                                            <h4>Mohammad Rakib</h4>
+                                            <a href="#">Cambridge University, London</a>
+                                            <p>(MSC in computer science)</p>
+                                            <p class="profile_place">From Dhaka,Bangladesh</p>
+                                        </div>
+                                        <div class="consult_btn">
+                                            <a href="#"><i class="fas fa-comment"></i>Consult by text</a>
+                                            <a href="#"><i class="fas fa-phone-alt"></i>Consult by phone</a>
+                                            <a href="#"><i class="fas fa-video"></i>Consult by video</a>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <p>(Average rating: 4.88 based on 5 ratings)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="directory_fees">
+                                        <h6>Fee</h6>
+                                        <p>Query : $4.99</p>
+                                        <p>Phone/Video : $9.99</p>
+                                        <p>Language Known: Arabic, English</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="directory_people_img">
+                                        <img src="./assets/img/cons.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="directory_info">
+                                        <div class="profile_info_name">
+                                            <h4>Mohammad Rakib</h4>
+                                            <a href="#">Cambridge University, London</a>
+                                            <p>(MSC in computer science)</p>
+                                            <p class="profile_place">From Dhaka,Bangladesh</p>
+                                        </div>
+                                        <div class="consult_btn">
+                                            <a href="#"><i class="fas fa-comment"></i>Consult by text</a>
+                                            <a href="#"><i class="fas fa-phone-alt"></i>Consult by phone</a>
+                                            <a href="#"><i class="fas fa-video"></i>Consult by video</a>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <p>(Average rating: 4.88 based on 5 ratings)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="directory_fees">
+                                        <h6>Fee</h6>
+                                        <p>Query : $4.99</p>
+                                        <p>Phone/Video : $9.99</p>
+                                        <p>Language Known: Arabic, English</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <div class="directory_people_img">
+                                        <img src="./assets/img/cons.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="directory_info">
+                                        <div class="profile_info_name">
+                                            <h4>Mohammad Rakib</h4>
+                                            <a href="#">Cambridge University, London</a>
+                                            <p>(MSC in computer science)</p>
+                                            <p class="profile_place">From Dhaka,Bangladesh</p>
+                                        </div>
+                                        <div class="consult_btn">
+                                            <a href="#"><i class="fas fa-comment"></i>Consult by text</a>
+                                            <a href="#"><i class="fas fa-phone-alt"></i>Consult by phone</a>
+                                            <a href="#"><i class="fas fa-video"></i>Consult by video</a>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            <p>(Average rating: 4.88 based on 5 ratings)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="directory_fees">
+                                        <h6>Fee</h6>
+                                        <p>Query : $4.99</p>
+                                        <p>Phone/Video : $9.99</p>
+                                        <p>Language Known: Arabic, English</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- directory filter and people section ends here -->
+
+    <!-- footer section begins here -->
+    <footer id="footer">
+        <div class="footer_inner">
+            <div class="footer_inner_most">
+                <div class="container">
+                    <div class="footer_wrap">
+                        <div class="row">
+                           <div class="col-lg-4">
+                               <div class="footer_about">
+                                   <div class="footer_header">
+                                       <h5>About virtual edu-consultation</h5>
+                                   </div>
+                                   <ul>
+                                       <li><a href="#">More about edu-consultation</a></li>
+                                       <li><a href="#">Consaltants Directory</a></li>
+                                       <li><a href="#">Contact Us</a></li>
+                                       <li><a href="#">Cancellation Policy</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <div class="col-lg-4">
+                                <div class="footer_about">
+                                    <div class="footer_header">
+                                        <h5>Mission and vision</h5>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Contact Customer Service</a></li>
+                                        <li><a href="#">Terms & conditions</a></li>
+                                        <li><a href="#">Reviews</a></li>
+                                        <li><a href="#">Cancellation Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>  
+                            <div class="col-lg-4">
+                                <div class="footer_form">
+                                    <div class="footer_header">
+                                        <h5>Get Update</h5>
+                                    </div>
+                                    <ul>
+                                        <li><input class="mail" type="text" placeholder="your email address"></li>
+                                        <li><a href="#" class="subscribe_btn">Subscribe</a></li>
+                                        <li class="social">
+                                            <span>Follow Us:</span>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#" class="ms-2"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="ms-2"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!--back to top button-->
+    <!-- <div id="back_to_top">
+        <i class="fas fa-arrow-up"></i>
+    </div> -->
+    <!--back to top button-->
+
+    <!--Jquery begins here-->
+    <script src="assets/JS/jquery-3.6.0.min.js"></script>
+    <!--Jquery begins here-->
+
+    <!--bootstrap JS begins here-->
+    <script src="assets/JS/bootstrap.min.js"></script>
+    <!--bootstrap JS ends here-->
+
+    <!--slick JS begins here-->
+    <script src="assets/JS/slick.min.js"></script>
+    <!--slick JS begins here-->
+
+    <!--waypoint js begins here  -->
+    <script src="assets/JS/jquery.waypoints.min.js"></script>
+    <!--waypoint js begins here -->
+
+    <!--counter up js begins here  -->
+    <script src="assets/JS/jquery.counterup.min.js"></script>
+    <!--counter up js begins here -->
+
+    <!--main JS begins here-->
+    <script src="assets/JS/script.js"></script>
+    <!--main JS begins here-->
+
+    <!--aos JS begins here-->
+    <script src="assets/JS/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--aos JS ends here-->
+</body>
+</html>

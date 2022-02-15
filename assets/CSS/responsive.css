@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+    .col-show-lg-5 {
+        width: 20%;
+    }
+}
